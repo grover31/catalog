@@ -5,26 +5,21 @@ dependencies:
   repository: https://truecharts.org/
   version: 6.3.5
 deprecated: false
-description: Fully configurable Zwave to MQTT gateway and Control Panel using NodeJS
-  and Vue
-home: https://github.com/truecharts/apps/tree/master/charts/stable/zwavejs2mqtt
-icon: https://raw.githubusercontent.com/zwave-js/zwavejs2mqtt/master/static/logo.png
+description: Rollease 2 MQTT App for TrueNAS SCALE
+home: https://github.com/grover31/catalog/tree/staging/stable/rollease2mqtt
+icon: https://play-lh.googleusercontent.com/lbDV-nb54VA9V6s9aPKG28INc03ox6HkH6FgsYx_4cms46MSH8lToAome3-Rl1vSrKdQ=s180
 keywords:
-- zwavejs2mqtt
-- zwave-js
-- z-wave
-- zwave
+  - rollease
+  - mqtt
+  - rolleasemqtt
+  - 2mqtt
+  - acmeda
+  - rolleaseacmeda
 kubeVersion: '>=1.16.0-0'
 maintainers:
-- email: info@truecharts.org
-  name: TrueCharts
-  url: truecharts.org
-- email: 35702532+tprelog@users.noreply.github.com
-  name: tprelog
-  url: truecharts.org
-name: zwavejs2mqtt
+  - name: Grover131
+name: rollease2mqtt
 sources:
-- https://github.com/zwave-js/zwavejs2mqtt
-- https://hub.docker.com/r/zwavejs/zwavejs2mqtt
+- https://github.com/quentinsf/rollease2mqtt
 type: application
 version: 6.1.5
