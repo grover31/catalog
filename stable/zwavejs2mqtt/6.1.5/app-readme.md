@@ -1,3 +1,2 @@
-Fully configurable Zwave to MQTT gateway and Control Panel using NodeJS and Vue
-This App is supplied by TrueCharts, for more information please visit https://truecharts.org
-Fully configurable Zwave to MQTT gateway and Control Panel using NodeJS
+Rollease 2 MQTT App for TrueNAS SCALE
+This App is supplied by Grover131

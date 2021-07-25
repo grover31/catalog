@@ -1,11 +1,11 @@
-# Default values for rollease2mqtt.
+# Default values for zwavejs2mqtt.
 # This chart inherits from our common library chart. You can check the default values/options here:
 # https://github.com/k8s-at-home/charts/tree/master/charts/common
 
 image:
-  repository: quentinsf/image-amd64-rollease2mqtt
+  repository: zwavejs/zwavejs2mqtt
   pullPolicy: IfNotPresent
-  tag: latest
+  tag: 5.0.2
 
 strategy:
   type: Recreate
@@ -18,9 +18,10 @@ podSecurityContext:
   fsGroup: 568
   supplementalGroups: [5, 20, 24]
 
+# # See more environment variables in the zwavejs2mqtt documentation
+# https://zwave-js.github.io/zwavejs2mqtt/#/guide/env-vars
 env: {}
   # OZW_NETWORK_KEY:
-  # device: /dev/ttyACM0
 
 probes:
   liveness:
@@ -66,19 +67,19 @@ probes:
     #   periodSeconds: 10
     #   timeoutSeconds: 10
 
-#service:
-#  main:
-#    ports:
-#      main:
-#        port: 8091
-#  ws:
-#    enabled: true
-#    type: ClusterIP
-#    ports:
-#      ws:
-#        enabled: true
-#        port: 3000
-#        protocol: TCP
+service:
+  main:
+    ports:
+      main:
+        port: 8091
+  ws:
+    enabled: true
+    type: ClusterIP
+    ports:
+      ws:
+        enabled: true
+        port: 3000
+        protocol: TCP
 
 # Privileged may be required if USB controller is accessed directly through the host machine
 # securityContext:
@@ -87,7 +88,7 @@ probes:
 persistence:
   config:
     enabled: true
-    mountPath: "/data"
+    mountPath: "/config"
     type: emptyDir
 
 

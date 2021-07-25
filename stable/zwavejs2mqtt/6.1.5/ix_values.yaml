@@ -5,9 +5,9 @@
 ##
 
 image:
-  repository: zwavejs/zwavejs2mqtt
+  repository: quentinsf/image-amd64-rollease2mqtt
   pullPolicy: IfNotPresent
-  tag: 5.0.2
+  tag: latest
 
 # 5=tty 20=dialout 24=cdrom
 podSecurityContext:
